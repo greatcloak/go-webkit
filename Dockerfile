@@ -13,5 +13,6 @@ ADD xvfb-init /etc/init.d/xvfb
 RUN chmod a+x /etc/init.d/xvfb
 
 ADD ./init.sh /init.sh
+RUN chmod a+x /init.sh
 
 ENTRYPOINT /init.sh
